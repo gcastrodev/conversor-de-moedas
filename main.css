@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, gray, black, green);
+}
+
+.logo {
+    max-width: 250px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+main {
+    max-width: 385px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;   
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select, input {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 200;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    background-color: #525252;
+    border: none;
+    height: 48px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #bbbbbb;
+    border-radius: 20px;
+    margin-top: 32px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    margin: 15px 0;  
+    max-width: 30%;
+    max-height: 50%;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    font-size: 14px;
+    color: #777777;
+}
+
+.currency-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #525252;
+}
+
+.flag {
+    max-width: 25%;
+    max-height: 23%;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
