@@ -1,61 +1,70 @@
 <!doctype html>
 <html>
-    <head lang="pt-br">
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Conversor de moedas</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-        <script src="main.js" defer></script>
-    </head>
-    <body>
-        <header>Conversor de Moedas</header>
-        <img 
-        class="logo"
-        src="assets/tio-patinhas.gif"
-        alt="Tio Patinhas"
-        class="tio-patinhas"
-        />
+  <head lang="pt-br">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Conversor de moedas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>Conversor de Moedas</header>
 
-        <main>
-            <label for="">
-                Converter <b>de</b>
-                <select name="" id="">
-                <option value="">R$ Real Brasileiro</option>
-                </select>
-            </label>
+    <img class="logo" src="assets/tio-patinhas.gif" alt="Tio Patinhas" />
 
-            <label for="">
-                Converter <b>para</b>
-                <select name="" id="">
-                <option value="">US $ Dólar Americano</option>
-                <option value="">€ Euro</option>
-                </select>
-            </label>
+    <main>
+      <label>
+        Converter <b>de</b>
 
-            <label for="">
-                Valor
-                <input class="currencyInput" type="number" placeholder="R$ 10.000,00" />
-            </label>
+        <select>
+          <option value="BRL">R$ Real Brasileiro</option>
+        </select>
+      </label>
 
-            <button class="convertButton">Converter</button>
+      <label>
+        Converter <b>para</b>
 
-            <section>
-                <div class="currency-box">
-                <img class="flag" src="assets/brazil-flag.png" alt="logo moeda à converter" />
-                <p class="currency">Real Brasileiro</p>
-                <p class="currency-value">R$ 0,00</p>
-                </div>
+        <select class="currencySelect">
+          <option value="USD">US$ Dólar Americano</option>
+          <option value="EUR">€ Euro</option>
+        </select>
+      </label>
 
-                <img class="arrow" src="assets/arrow.jpg" alt="seta indicando a conversão" />
+      <label>
+        Valor
 
-                <div class="currency-box">
-                <img class="flag" src="assets/usa-flag.svg" alt="logo moeda à converter" />
-                <p class="currency">Dólar Americano</p>
-                <p class="currency-value">US$ 0,00</p>
-                </div>
-            </section>
-        </main>
-        <footer>Desenvolvido por <a href="https://github.com/gcastrodev/conversor-de-moedas">Gabriel Castro</a></footer>
-    </body>
+        <input class="currencyInput" type="number" placeholder="R$ 10.000,00" />
+      </label>
+
+      <button class="convertButton">Converter</button>
+
+      <section>
+        <div class="currency-box">
+          <img class="flag" src="assets/brazil-flag.png" alt="real" />
+
+          <p class="currency">Real Brasileiro</p>
+
+          <p class="currency-value-to-convert">R$ 0,00</p>
+        </div>
+
+        <img class="arrow" src="assets/arrow.jpg" />
+
+        <div class="currency-box">
+          <img class="flag currencyFlag" src="assets/usa-flag.svg" />
+
+          <p class="currency currencyName">Dólar Americano</p>
+
+          <p class="currency-value">US$ 0,00</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Desenvolvido por
+      <a href="https://github.com/gcastrodev/conversor-de-moedas">
+        Gabriel Castro
+      </a>
+    </footer>
+  </body>
 </html>
